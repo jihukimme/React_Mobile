@@ -1,7 +1,7 @@
 import React from "react";
 import "./Page3.scss";
 
-export default function MainPage() {
+export default function Page3() {
   return (
     <div className="page3">
       <h1>Page 3</h1>
