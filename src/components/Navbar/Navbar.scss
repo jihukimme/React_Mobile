@@ -24,14 +24,14 @@
   div {
     // 선택되지 않았을 때
     .nav-link {
-      color: rgb(193, 193, 193);
+      color: rgb(200, 200, 200);
       font-size: 20px;
       font-weight: bold;
     }
 
     // 선택되었을 때
     .active {
-      color: #cba0ff;
+      color: #736cbd;
     }
   }
 }

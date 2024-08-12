@@ -1,4 +1,7 @@
-import { faAngleLeft, faBell } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleLeft,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom";
@@ -64,19 +67,20 @@ export default function Header() {
             }}
           >
             <FontAwesomeIcon icon={faAngleLeft} />
+            <div className="header-text">검색</div>
           </NavLink>
         </div>
       ) : (
-        <div className="logo">😆로고</div>
+        <div className="logo">로고</div>
       )}
-      <div className="icon-bell">
+      <div className="icon-search">
         <NavLink
-          to="/notification"
+          to="/search"
           className={({ isActive }) =>
             isActive ? "nav-link active" : "nav-link"
           }
         >
-          <FontAwesomeIcon icon={faBell} />
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
         </NavLink>
       </div>
     </div>
